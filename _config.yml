@@ -33,7 +33,7 @@ page_gen:
   - data: publications
     template: bibtex
     name: Tag
-    dir: bibtex
+    dir: publications/bibtex
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
