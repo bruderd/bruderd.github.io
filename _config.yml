@@ -27,6 +27,7 @@ markdown: kramdown
 theme: jekyll-theme-hyde
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # this is used for generating the individual bibtex pages
 page_gen:
@@ -34,6 +35,7 @@ page_gen:
     template: bibtex
     name: Tag
     dir: publications/bibtex
+    index_files: true
 
 # make sure the generated pages are included
 include: [ publications/bibtex ]
