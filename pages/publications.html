@@ -14,7 +14,7 @@ permalink: /publications/
         {% assign bibtexLoc = site.url | append: "/bibtex/" | append: paper.Tag | append: ".html" %}
         <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
           {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
-          {% if paper.bibtex %} [<a href="{{ paper.bibtex }}" target="_blank">bibtex</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
           {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
         </li>
       {% endif %}
@@ -25,9 +25,10 @@ permalink: /publications/
   <ul>
     {% for paper in site.data.publications reversed %}
       {% if paper.Type == "01_Journal" %}
+        {% assign bibtexLoc = site.url | append: "/bibtex/" | append: paper.Tag | append: ".html" %}
         <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
           {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
-          {% if paper.bibtex %} [<a href="{{ paper.bibtex }}" target="_blank">bibtex</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
           {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
         </li>
       {% endif %}
@@ -38,9 +39,10 @@ permalink: /publications/
   <ul>
     {% for paper in site.data.publications reversed %}
       {% if paper.Type == "02_Conference" %}
+        {% assign bibtexLoc = site.url | append: "/bibtex/" | append: paper.Tag | append: ".html" %}
         <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
           {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
-          {% if paper.bibtex %} [<a href="{{ paper.bibtex }}" target="_blank">bibtex</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
           {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
         </li>
       {% endif %}
@@ -51,9 +53,10 @@ permalink: /publications/
   <ul>
     {% for paper in site.data.publications reversed %}
       {% if paper.Type == "04_Presentation" %}
+      {% assign bibtexLoc = site.url | append: "/bibtex/" | append: paper.Tag | append: ".html" %}
         <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
           {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
-          {% if paper.bibtex %} [<a href="{{ paper.bibtex }}" target="_blank">bibtex</a>]{% endif %}
+          {% if paper.bibtex %} [<a href="{{ bibtexLoc }}">bibtex</a>]{% endif %}
           {% if paper.video %} [<a href="{{ paper.video }}" target="_blank">video</a>]{% endif %}
         </li>
       {% endif %}
