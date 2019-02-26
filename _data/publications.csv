@@ -1,4 +1,5 @@
 Authors,Show,Tag,Title,Publication,Year,Type,url,video,bibtex
+,FALSE,index,,,,,,,
 "A. Sedal, D. Bruder, J. Bishop-Moser, R. Vasudevan, and S. Kota",TRUE,idetc2017,A Constitutive Model for Torsional Loads on Fluid-Driven Soft Robots ,ASME International Design Engineering Technical Conferences (IDETC),2017,02_Conference,http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=2662191,,"""@inproceedings{sedal2017constitutive,
   title={A constitutive model for torsional loads on fluid-driven soft robots},
   author={Sedal, Audrey and Bruder, Daniel and Bishop-Moser, Joshua and Vasudevan, Ram and Kota, Sridhar},
