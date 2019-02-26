@@ -11,6 +11,7 @@ permalink: /publications/
   <ul>
     {% for paper in site.data.publications reversed %}
       {% if paper.Type == "03_Preprint" %}
+        {% assign bibtexLoc = site.url | append: "/bibtex/" | append: paper.Tag | append: ".html" %}
         <li> {{ paper.Authors }}. "{{ paper.Title }}". <i> {{ paper.Publication }}. </i> {{ paper.Year }}.
           {% if paper.url %} [<a href="{{ paper.url }}" target="_blank">pdf</a>]{% endif %}
           {% if paper.bibtex %} [<a href="{{ paper.bibtex }}" target="_blank">bibtex</a>]{% endif %}

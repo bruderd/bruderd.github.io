@@ -28,6 +28,13 @@ theme: jekyll-theme-hyde
 plugins:
   - jekyll-feed
 
+# this is used for generating the individual bibtex pages
+page_gen:
+  - data: publications
+    template: bibtex
+    name: Tag
+    dir: bibtex
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
