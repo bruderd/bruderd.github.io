@@ -35,11 +35,11 @@ page_gen:
     template: bibtex
     name: Tag
     dir: publications/bibtex
-    index_files: true
+    index_files: false
 
-# make sure the generated pages are included
-include: [ publications/bibtex ]
-safe: false
+# # make sure the generated pages are included
+# include: [ publications/bibtex ]
+# safe: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
